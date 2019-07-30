@@ -6,7 +6,7 @@ $('.slick-center').on('afterChange', function(event, slick, currentSlide, nextSl
         $('header li a').css('color', 'black');
         $('header span a').css('color', 'black');
         $('.slider-text a').css('color', 'black');
-        $(".order img").attr("src","https://github.com/eveOch/finalProject/blob/master/assets/cart.png");
+        $(".order img").attr("src","https://eveoch.github.io/finalProject/assets/cart.png");
     }
     else
     {
@@ -14,6 +14,6 @@ $('.slick-center').on('afterChange', function(event, slick, currentSlide, nextSl
         $('header li a').css('color', 'white');
         $('header span a').css('color', 'white');
         $('.slider-text a').css('color', 'white');
-        $(".order img").attr("src","https://github.com/eveOch/finalProject/blob/master/assets/cart2.png");
+        $(".order img").attr("src","https://eveoch.github.io/finalProject/assets/cart2.png");
     }
 });
