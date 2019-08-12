@@ -1,0 +1,27 @@
+@media all and (min-width: 320px) and (max-width: 639px) {
+  .footwear-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .footwear-item {
+    width: 40%; } }
+
+@media all and (min-width: 640px) and (max-width: 1199px) {
+  .footwear-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .footwear-item {
+    width: 25%; } }

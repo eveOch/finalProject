@@ -1,0 +1,25 @@
+.header-slider {
+  position: absolute;
+  margin: auto;
+  width: 100%; }
+
+.header-slider img {
+  width: 100%;
+  height: auto; }
+
+.slick-prev {
+  left: 25px !important;
+  z-index: 1001 !important; }
+
+.slick-next {
+  right: 25px !important; }
+
+.slider-text {
+  position: absolute;
+  bottom: 0;
+  margin-left: 152px;
+  margin-bottom: 70px; }
+
+.slider-text a {
+  font-size: 64px;
+  font-weight: bold; }

@@ -1,3 +1,118 @@
+@charset "UTF-8";
+body {
+  max-width: 1400px;
+  margin: 0 auto !important;
+  font-family: 'PT Sans', sans-serif;
+  /*HEADER*/ }
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.header-menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: auto;
+  overflow-y: hidden; }
+
+.header-menu-logo {
+  margin-right: 42px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none; }
+
+.header-menu li {
+  margin-left: 24px;
+  white-space: pre; }
+
+.header-menu li a {
+  color: black; }
+
+.header-menu li a:hover {
+  color: #4541FE; }
+
+.header-menu-basket::before {
+  margin-left: 6px;
+  content: "Оформить заказ";
+  /*footwear item*/ }
+
+.footwear-section {
+  position: relative; }
+
+.footwear-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 97px; }
+
+.footwear {
+  background: black;
+  width: 100%;
+  height: 160px;
+  position: absolute;
+  z-index: -1;
+  top: -97px; }
+
+.footwear p {
+  font-size: 32px;
+  line-height: 41px;
+  font-weight: bold;
+  margin-left: 10%;
+  margin-top: 40px;
+  color: white; }
+
+.footwear-item {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 48px; }
+
+.footwear-item img {
+  width: 100%;
+  height: auto; }
+
+.footwear-header {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  color: black; }
+
+.footwear-description {
+  margin-bottom: 12px;
+  font-size: 13px;
+  line-height: 17px; }
+
+.footwear-price {
+  font-weight: bold; }
+
 /*MOBILE STYLE*/
 @media all and (min-width: 320px) and (max-width: 639px) {
   .header-menu-basket::before {
@@ -317,3 +432,149 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row; } }
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.header-menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: auto;
+  overflow-y: hidden; }
+
+.header-menu-logo {
+  margin-right: 42px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none; }
+
+.header-menu li {
+  margin-left: 24px;
+  white-space: pre; }
+
+.header-menu li a {
+  color: black; }
+
+.header-menu li a:hover {
+  color: #4541FE; }
+
+.header-menu-basket::before {
+  margin-left: 6px;
+  content: "Оформить заказ"; }
+
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header-menu-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.count {
+  position: absolute;
+  top: -7px;
+  left: 10px;
+  background: blue;
+  border-radius: 100%;
+  width: 16px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  padding: 0px; }
+
+footer {
+  padding-bottom: 16px;
+  background: black; }
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white; }
+
+footer li {
+  margin-left: 17px;
+  margin-bottom: 8px;
+  list-style-type: none; }
+
+footer nav li a:hover {
+  opacity: 0.5; }
+
+footer ul span {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12px; }
+
+.mail {
+  display: inline-block;
+  margin-bottom: 32px; }
+
+.freeTel a {
+  font-weight: bold;
+  text-decoration: none; }
+
+.freeCall {
+  padding: 0px;
+  margin: 0px;
+  font-size: 13px; }
+
+footer ul a {
+  color: white; }
+
+.police {
+  color: #666666;
+  margin-left: 40px;
+  font-size: 13px; }
+
+.police a {
+  color: #666666;
+  margin-left: 24px;
+  font-weight: normal; }
+
+.police a:hover {
+  color: white; }
+
+@media all and (min-width: 320px) and (max-width: 639px) {
+  .footwear-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .footwear-item {
+    width: 40%; } }
+
+@media all and (min-width: 640px) and (max-width: 1199px) {
+  .footwear-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .footwear-item {
+    width: 25%; } }
