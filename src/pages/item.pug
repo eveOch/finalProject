@@ -1,0 +1,128 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        //- link(rel="stylesheet", href="styles/footwear.css")
+        link(rel="stylesheet", href="styles/normalize.css")
+        link(rel="stylesheet", href="styles/item.css")
+        link(rel="stylesheet", href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css")
+        title= pageTitle
+    body
+        include header
+        main
+            article.item
+                section.item-list
+                    .item-header
+                        span Maison Margiela Fusion Low Sneakers
+                        p Кросовки
+                    .footwear-option
+                        .option-color
+                            span Цвет
+                            p Белый с розовым
+                            p Белый с зеленым
+                        .option-size
+                            span Размер US
+                            .option-size-mobile
+                                p 6
+                                p 6.5
+                                p 7
+                                p 9
+                        .option-table-size
+                            a(href="") Таблица размеров
+                        .option-bay
+                            a(href="") Купить, 92 000P
+                    .option-about
+                        .material
+                            span.option-about-title Материал
+                            span Кожа, текстиль
+                        .manufacturer
+                            span.option-about-title Страна производитель
+                            span Италия
+                    .option-about-description
+                        span.option-about-title Описание
+                        p Деконструктивный и авангардный дизайн с уникальными концепциями и нетрадиционным мастерством. 
+                        p В качестве материала используются два вида кожи. Верх дополнен деталями из сетчатого материала и текстиля. 
+                        p Грубые и многослойные кроссовки показывают отличие от традиционного аккуратного стиля создания обуви. Они оснащены раскрашенной вручную резиновой подошвой с брызгами и потеками. 
+                        p Оригинальная слегка асимметричная система шнуровки и фирменный стежок на заднике завершают уникальный внешний вид.
+                    .option-about-detail
+                        span.option-about-title Детали
+                        span
+                            |— Два вида кожи
+                            |— Детали из текстиля
+                            |— Неординарная шнуровка
+                            |— Перфорация на мыске
+                            |— Стежок на заднике
+                            |— Фигурная резиновая подошва
+                            |— Цепкая подметка
+                            |— Окрашивание с брызгами и потеками
+                            |— Пестрая расцветка
+
+
+                .footwear-list
+                    .footwear-list-item-mini
+                        img(src="assets/item/mini/image2.png", alt="")
+                        img(src="assets/item/mini/image3.png", alt="")
+                        img(src="assets/item/mini/image.png", alt="")
+                        img(src="assets/item/mini/image2.png", alt="")
+
+            .recommendations
+                p Вам может быть интересно
+                 .recommendations-slider
+                    .slider-recommendations
+                        img(src="assets/item/img.png", alt="alt")
+                        .recommendations-slider-text
+                            a(href="") Reebok Aztrek<br>Double
+                    .slider-recommendations
+                        img(src="assets/item/img-2.png", alt="alt")
+                        .recommendations-slider-text
+                            a(href="") Nike ACG: навстречу<br>новым открытиям
+                    .slider-recommendations
+                        img(src="assets/item/img-3.png", alt="alt")
+                        .recommendations-slider-text
+                            a(href="") Nike ACG: навстречу<br>новым открытиям
+                    .slider-recommendations
+                        img(src="assets/item/img-4.png", alt="alt")
+                        .recommendations-slider-text
+                            a(href="") Nike ACG: навстречу<br>новым открытиям
+                    .slider-recommendations
+                        img(src="assets/item/img-5.png", alt="alt")
+                        .recommendations-slider-text
+                            a(href="") Nike ACG: навстречу<br>новым открытиям
+                        
+
+
+        include footer
+        script(src="scripts/item.js")
+        script(src="scripts/slider.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
+        script $('.recommendations-slider').slick(
+            |{
+            |slidesToShow: 4, 
+            |slidesToScroll: 1,
+            |responsive: [{
+            |breakpoint: 321,
+            |settings: {
+            |slidesToShow: 1,
+            |slidesToScroll: 1,
+            |}
+            |},
+            |{
+            |breakpoint: 361,
+            |settings: {
+            |slidesToShow: 1,
+            |slidesToScroll: 1,
+            |}
+            |},
+            |{
+            |breakpoint: 641,
+            |settings: {
+            |slidesToShow: 3,
+            |slidesToScroll: 1
+            |}
+            |}]
+            |}
+            |);

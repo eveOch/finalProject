@@ -1,0 +1,49 @@
+extends main
+
+block variables
+    - var pageTitle = 'Фетч'
+
+block content
+
+    main
+        article
+            section.main-menu-style
+                include main-menu
+            
+            section.main-content
+                .fromeditors
+                    .luckbook
+                        a(href="").head-editors Лукбук, лето 2019
+                        p.head-desctiprion Стильные образы теплых деньков
+                        picture
+                            source(media="(max-width: 640px)" srcset="assets/luckbook-mob.png")
+                            img(src="assets/luckbook.png", alt="alt")
+                
+                    .editors-choice
+                        a(href="").head-editors Выбор редакции: часы
+                        p.head-desctiprion ТОП-5 лучших предложений по версии администрации Фетч
+
+
+                .newcollection
+                    a(href="").head-editors Новая коллекция adidas Originals
+                    p.head-desctiprion Десять крутейших крововок
+                    picture
+                        source(media="(max-width: 640px)" srcset="assets/sneakers-mob.png")
+                        img(src="assets/sneakers.png", alt="alt")
+            section.pre-order
+                span
+                    a(href="") Предзаказ: Maison Margela Fusion
+                    p От 92 000 Р
+                    .pre-order-style
+                        //- picture
+                        //-     source(media="(max-width: 360px)" srcset="assets/leftmaison-mob.png")
+                        //-     img(src="assets/leftmaison.png", alt="alt").leftmaison
+                        //- picture
+                        //-     source(media="(max-width: 360px)" srcset="assets/centermaison-mob.png")
+                        //-     img(src="assets/centermaison.png", alt="alt").centermaison
+                        //- picture
+                        //-     source(media="(max-width: 360px)" srcset="assets/rightmaison-mob.png")
+                        //-     img(src="assets/rightmaison.png", alt="alt").rightmaison
+                        img(src="assets/leftmaison.png", alt="alt").leftmaison
+                        img(src="assets/centermaison.png", alt="alt").centermaison
+                        img(src="assets/rightmaison.png", alt="alt").rightmaison

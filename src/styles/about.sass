@@ -1,0 +1,62 @@
+body
+    max-width: 1400px
+    margin: auto
+    font-family: 'PT Sans', sans-serif
+    
+    /*HEADER*/
+.header-menu
+    display: flex
+    align-items: center
+    justify-content: space-around
+
+.header-menu ul
+    list-style: none
+    display: flex
+    align-items: center
+    overflow: auto
+    overflow-y: hidden
+    
+
+.header-menu-logo
+    margin-right: 42px
+    font-size: 24px
+    font-weight: bold
+    color: black
+    text-decoration: none
+
+.header-menu li 
+    margin-left: 24px
+    white-space: pre
+
+.header-menu li a
+    color: black
+
+.header-menu li a:hover
+    color: #4541FE
+
+.header-menu-basket::before
+    margin-left: 6px
+    content: "Оформить заказ"
+
+.about
+    padding-top: 80px
+    display: flex
+    justify-content: space-around
+    margin-bottom: 64px
+.about-description
+    margin-left: 16px
+    width: 30%
+
+.about-description p
+    font-size: 18px
+
+.about-contact
+    width: 40%
+    background: #F2F2F2
+    padding: 26px
+    display: flex
+    flex-direction: column
+
+@import mobile
+@import header
+@import footer
